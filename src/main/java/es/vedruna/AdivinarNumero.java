@@ -25,7 +25,7 @@ public class AdivinarNumero {
         return random.nextInt(max - min + 1) + min;
     }
 
-    // Este metodo lo que hace es pedir el numeor al jugador y tambien valida que el jugador introduzca un numero dentro del rango y que solo queta nuemeros
+    // Este metodo lo que hace es pedir el numero al jugador y tambien valida que el jugador introduzca un numero dentro del rango y que solo tenga numeros
     public static int IntroducirNumeroValido(Scanner scanner, int min, int max) {
         int numero;
 
@@ -44,7 +44,7 @@ public class AdivinarNumero {
             }
         }
     }
-    // Muetra si el jugador a in troducido un numero menor y mayor al que tiene que adivinar
+    // Muetra si el jugador a introducido un numero menor y mayor al que tiene que adivinar
     public static void mostrarPista(int numeroUsuario, int numeroObjetivo) {
         if (numeroUsuario < numeroObjetivo) {
             System.out.println("Es mayor.");
@@ -52,7 +52,7 @@ public class AdivinarNumero {
             System.out.println("Es menor.");
         }
     }
-    // Muestra que has gando y te dice cunatos intentos has tadardo qeu adivinarlo
+    // Muestra que has gando y te dice cunatos intentos has tadardo en adivinarlo
     public static void mostrarGanador(int rondas) {
         System.out.println("¡Felicidades! Has adivinado el número.");
         System.out.println("Intentos: " + rondas);
